@@ -9,12 +9,13 @@
     <meta name="author" content="Jenny Lin" />
     <link rel="icon" href="img/favicon.ico" />
 
-    <title>Members: Social Network Dobble</title>
+    <title>Photos: Social Network Dobble</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
+    <link href="css/ekko-lightbox.css" rel="stylesheet" />
     <link href="css/font-awesome.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -71,10 +72,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="groups.html">Groups</a></li>
-            <li><a href="photos.html">Photos</a></li>
+            <li class="active"><a href="photos.html">Photos</a></li>
             <li><a href="profile.html">Profile</a></li>
           </ul>
         </div>
@@ -86,118 +87,93 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div class="memebers">
-              <h1 class="page-header">Members</h1>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" />
-                  <div class="text-center">SomerUser01</div>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-success bth-block"
-                      ><i class="fa fa-users"></i>Add Friend</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-default bth-block"
-                      ><i class="fa fa-envelope"></i>Send Message</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-primary bth-block"
-                      ><i class="fa fa-edit"></i>View Profile</a
-                    >
-                  </p>
-                </div>
-              </div>
-
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" />
-                  <div class="text-center">SomerUser02</div>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-success bth-block"
-                      ><i class="fa fa-users"></i>Add Friend</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-default bth-block"
-                      ><i class="fa fa-envelope"></i>Send Message</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-primary bth-block"
-                      ><i class="fa fa-edit"></i>View Profile</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" />
-                  <div class="text-center">SomerUser03</div>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-success bth-block"
-                      ><i class="fa fa-users"></i>Add Friend</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-default bth-block"
-                      ><i class="fa fa-envelope"></i>Send Message</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-primary bth-block"
-                      ><i class="fa fa-edit"></i>View Profile</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail" />
-                  <div class="text-center">SomerUser04</div>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-success bth-block"
-                      ><i class="fa fa-users"></i>Add Friend</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-default bth-block"
-                      ><i class="fa fa-envelope"></i>Send Message</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p>
-                    <a href="#" class="btn btn-primary bth-block"
-                      ><i class="fa fa-edit"></i>View Profile</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
+            <h1 class="page-header">Photos</h1>
+            <ul class="photos gallery-parent">
+              <li>
+                <a
+                  href="img/sample1.jpg"
+                  data-title="image one"
+                  data-toggle="lightbox"
+                  data-footer="This is image 1"
+                  data-gallery="mygallery"
+                  data-parent=".gallery-parent"
+                  data-hover="tooltip"
+                  data-placement="top"
+                  title="Eagle"
+                  ><img src="img/sample1.jpg" class="img-thumbnail"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="img/sample2.jpg"
+                  data-title="image two"
+                  data-toggle="lightbox"
+                  data-footer="This is image 2"
+                  data-gallery="mygallery"
+                  data-parent=".gallery-parent"
+                  data-hover="tooltip"
+                  data-placement="top"
+                  title="Straws"
+                  ><img src="img/sample2.jpg" class="img-thumbnail"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="img/sample3.jpg"
+                  data-title="image three"
+                  data-footer="This is image 3"
+                  data-toggle="lightbox"
+                  data-gallery="mygallery"
+                  data-parent=".gallery-parent"
+                  data-hover="tooltip"
+                  data-placement="top"
+                  title="Park Bench"
+                  ><img src="img/sample3.jpg" class="img-thumbnail"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="img/sample4.jpg"
+                  data-title="image four"
+                  data-footer="This is image 4"
+                  data-toggle="lightbox"
+                  data-gallery="mygallery"
+                  data-parent=".gallery-parent"
+                  data-hover="tooltip"
+                  data-placement="top"
+                  title="Sunflower"
+                  ><img src="img/sample4.jpg" class="img-thumbnail"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="img/sample5.jpg"
+                  data-title="image five"
+                  data-toggle="lightbox"
+                  data-footer="This is image 5"
+                  data-gallery="mygallery"
+                  data-parent=".gallery-parent"
+                  data-hover="tooltip"
+                  data-placement="top"
+                  title="ball in rainbow"
+                  ><img src="img/sample5.jpg" class="img-thumbnail"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="img/sample6.jpg"
+                  data-title="image six"
+                  data-toggle="lightbox"
+                  data-footer="This is image 6"
+                  data-gallery="mygallery"
+                  data-parent=".gallery-parent"
+                  data-hover="tooltip"
+                  data-placement="top"
+                  title="marble"
+                  ><img src="img/sample6.jpg" class="img-thumbnail"
+                /></a>
+              </li>
+            </ul>
           </div>
           <!-- col-md-8 end -->
           <div class="col-md-4">
@@ -320,5 +296,15 @@
         );
     </script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+    <script>
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+      $(function () {
+        $('[data-hover="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
